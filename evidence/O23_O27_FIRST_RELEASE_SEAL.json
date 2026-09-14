@@ -1,0 +1,123 @@
+{
+  "attestation": {
+    "algorithm": "Ed25519",
+    "attestation_hash": "b0b7c71597a6da92d1613795cbfea03cb5e34075409dfed53c2ca2c82737ade8",
+    "attestation_version": "O23.1",
+    "certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd",
+    "human_promotion_claimed": false,
+    "key_id": "O23-EPHEMERAL-EVIDENCE-001",
+    "payload_b64": "T01OSVZFUlNFLURFU0lHTi1QQVRIT0xPR1ktTzIzCjc0YWQwNmFjNTEyZWE1YmVhZmM4MTA3OGFmNWY4ZTAxZDM4MmMwN2QzMDBhYmZiMmMyMDlkODg0MDA1NWQxZmQKTzIzLUVQSEVNRVJBTC1FVklERU5DRS0wMDEKRVhQRVJJTUVOVEFMX0FUVEVTVEFUSU9O",
+    "payload_sha256": "9b05dc01603f93bacd4a55440948487ec7d9842dc8015ca1da7835908b47da2c",
+    "public_key_b64": "tKP9XXXPKGpvGCNNtGHmk7mR+YMkCTmdNI9p3KbISqs=",
+    "signature_b64": "BZMQO1fNvoUMtDupapCZLCdw56Z1vhQjp7x8bzIrwvF00SVw8IBeUIsSLvp2InIpwDck9qs6MlgiDswk3uHgAw==",
+    "signer_scope": "EXPERIMENTAL_ATTESTATION"
+  },
+  "attestation_verification": {
+    "authority_transfer": false,
+    "certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd",
+    "checks": {"algorithm_supported": true, "payload_hash_matches": true, "signature_valid": true},
+    "error": null,
+    "key_id": "O23-EPHEMERAL-EVIDENCE-001",
+    "passed": true,
+    "signer_scope": "EXPERIMENTAL_ATTESTATION",
+    "verification_version": "O23.1"
+  },
+  "certificate": {
+    "authority_transfer": false,
+    "certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd",
+    "certificate_version": "O22.1",
+    "compilation_hash": "a163abe32021ed490f3681e1a7c7f91a1c6de3a368ca0f2fadf5f6aaecd6ff7e",
+    "compiler_version": "O13.1",
+    "eligible_for_human_promotion": true,
+    "epistemic_decision_hash": "b9d8405be3ee5162661604ea13049010a02c70f8e78c285422028b902b5de2c4",
+    "genealogy_root_hash": "47fb458b4e17b54feb5858953feaad3319d4560f61006816c4fcd2596151ab65",
+    "human_promoted": false,
+    "portal_contract_hash": "9fc2148d877c09e7ff2f99ffd48c360ba594598859785342c7d7f21b690a7301",
+    "replay_hash": "f79b6171f3d088ca21a2a8cd93f0328683e7c64b80d27f41eb2a4d7758d09f47",
+    "signature": null,
+    "signature_state": "UNSIGNED_HUMAN_PROMOTION_REQUIRED",
+    "source_hash": "28494cd3804bb93bbebd0d53a128c3f2115eb0adc034e1b337b0dbee415c9fad",
+    "subject_node_id": "UNIVERSE-A163ABE32021ED49",
+    "tournament_hash": "c847bcbe8c042ad6c58708083bf1087c27c5931959536ff09e795dc8e83f6dfc",
+    "tribunal_hash": "ce271fecb62fc4d9898b26c7782c40fe98bf0a2023abc2b014ec526b88eb0cdf"
+  },
+  "execution_order": ["O23", "O24", "O25", "O26", "O27"],
+  "governance_demonstration": {
+    "post_revocation_seal_state": "HOLD",
+    "resulting_state": {"found": true, "state": "REVOKED", "superseded_by": null},
+    "revocation_event": {
+      "action": "REVOKE",
+      "authority_transfer": false,
+      "event_hash": "747f9eae1d0f53945a549a6cb854eda79b4796896dc7998e472e319e657c1d65",
+      "governance_version": "O26.1",
+      "human_authorization_required": true,
+      "reason": "demonstration of reversible governance; not a production revocation",
+      "superseding_certificate_hash": null,
+      "target_certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd"
+    },
+    "revoked_ledger_root": "982d2e5ae001aea112034009bde811f9f2860d0002a4068df2b14e4f785e1506"
+  },
+  "independent_replay": {
+    "checks": {"compilation_hash_matches": true, "node_id_matches": true, "portal_contract_valid": true, "source_hash_matches": true, "worker_replay_passed": true},
+    "environment": {"implementation": "CPython", "platform": "Linux-6.18.44-x86_64-with-glibc2.41", "python": "3.13.5"},
+    "environment_id": "O24-local-independent-process",
+    "passed": true,
+    "portal_contract": {
+      "checks": {"ancestor_mutation_allowed": true, "authority_transfer": true, "compiler_version": true},
+      "contract_hash": "9fc2148d877c09e7ff2f99ffd48c360ba594598859785342c7d7f21b690a7301",
+      "contract_id": "BOOKSEED-PORTAL/1.0.0",
+      "passed": true
+    },
+    "receipt_hash": "447cebf98042d3cb042b6d234d3d4bc436d6a7a91de543aa1e8701886e1f28c8",
+    "replay_output": {
+      "ancestor_mutation_allowed": false,
+      "authority_transfer": false,
+      "compilation_hash": "a163abe32021ed490f3681e1a7c7f91a1c6de3a368ca0f2fadf5f6aaecd6ff7e",
+      "compiler_version": "O13.1",
+      "concept_seed": "A qualified descendant can be independently replayed, signed, ledgered, revoked, and sealed without erasing ancestry.",
+      "contradiction": null,
+      "environment": "isolated_design_sandbox",
+      "epistemic_class": "INTERPRETED",
+      "execution_policy": "declarative_only",
+      "mission": "translate_book_seed",
+      "node_id": "UNIVERSE-A163ABE32021ED49",
+      "node_type": "software_sandbox",
+      "observer_lens": "architect",
+      "source": {"seed_id": "SEED-RELEASE-001", "source_hash": "28494cd3804bb93bbebd0d53a128c3f2115eb0adc034e1b337b0dbee415c9fad", "source_id": "BOOK-O23-O27-001"}
+    },
+    "replay_version": "O24.1",
+    "separation_class": "PROCESS_ISOLATED_SAME_RUNTIME"
+  },
+  "ledger": {
+    "entries": [{
+      "payload": {"attestation_hash": "b0b7c71597a6da92d1613795cbfea03cb5e34075409dfed53c2ca2c82737ade8", "authority_transfer": false, "certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd", "human_promoted": false, "independent_replay_hash": "447cebf98042d3cb042b6d234d3d4bc436d6a7a91de543aa1e8701886e1f28c8", "status": "ACTIVE", "subject_node_id": "UNIVERSE-A163ABE32021ED49"},
+      "payload_hash": "0c7605c5f8eccd914f6b72dee02cd919c4620f74e5ea80079ee71d81af3ff95b",
+      "previous_root": "0000000000000000000000000000000000000000000000000000000000000000",
+      "record_hash": "9f0dae1113315609b410560c9a4f912bcf9d339a3404a1ffdaa76f6dfda88428",
+      "record_type": "CERTIFICATE",
+      "root_hash": "15acbfc51038ccf4d9ad11908eb32570d7324728de1b401cc0902510ac9fd1f1",
+      "sequence": 1
+    }],
+    "ledger_version": "O25.1",
+    "root_hash": "15acbfc51038ccf4d9ad11908eb32570d7324728de1b401cc0902510ac9fd1f1"
+  },
+  "ledger_verification": {"entry_count": 1, "errors": [], "passed": true, "root_hash": "15acbfc51038ccf4d9ad11908eb32570d7324728de1b401cc0902510ac9fd1f1", "verification_version": "O25.1"},
+  "private_key_persisted": false,
+  "release_seal": {
+    "authority_transfer": false,
+    "certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd",
+    "checks": {"attestation_binds_certificate": true, "attestation_verified": true, "certificate_active": true, "certificate_eligible": true, "independent_replay_passed": true, "ledger_valid": true, "no_authority_transfer": true, "portal_contract_valid": true, "replay_compilation_matches": true, "replay_source_matches": true, "replay_subject_matches": true},
+    "constitutional_root": "7125447f5fb1db9bf3c12157087cb11643f4f6252c70947ffc925f5b21249bf6",
+    "human_promoted": false,
+    "human_promotion_required": true,
+    "ledger_root_hash": "15acbfc51038ccf4d9ad11908eb32570d7324728de1b401cc0902510ac9fd1f1",
+    "mechanically_qualified": true,
+    "release_state": "QUALIFIED_NOT_PROMOTED",
+    "scope_statement": "Seal attests recorded software evidence and governance state; it does not establish external physical or metaphysical claims.",
+    "seal_hash": "ffc04ac39014aed92a3a59250c7bacdda69f361b5c541798f017cd5ecbc59140",
+    "seal_version": "O27.1",
+    "subject_node_id": "UNIVERSE-A163ABE32021ED49"
+  },
+  "seed": {"concept_seed": "A qualified descendant can be independently replayed, signed, ledgered, revoked, and sealed without erasing ancestry.", "epistemic_class": "INTERPRETED", "observer_lens": "architect", "seed_id": "SEED-RELEASE-001", "source_id": "BOOK-O23-O27-001", "source_text": "A release can preserve lineage without transferring authority."},
+  "signing_request": {"algorithm": "Ed25519", "certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd", "domain": "OMNIVERSE-DESIGN-PATHOLOGY-O23", "human_promotion_claimed": false, "key_id": "O23-EPHEMERAL-EVIDENCE-001", "payload_b64": "T01OSVZFUlNFLURFU0lHTi1QQVRIT0xPR1ktTzIzCjc0YWQwNmFjNTEyZWE1YmVhZmM4MTA3OGFmNWY4ZTAxZDM4MmMwN2QzMDBhYmZiMmMyMDlkODg0MDA1NWQxZmQKTzIzLUVQSEVNRVJBTC1FVklERU5DRS0wMDEKRVhQRVJJTUVOVEFMX0FUVEVTVEFUSU9O", "payload_sha256": "9b05dc01603f93bacd4a55440948487ec7d9842dc8015ca1da7835908b47da2c", "signer_scope": "EXPERIMENTAL_ATTESTATION", "signing_version": "O23.1"}
+}

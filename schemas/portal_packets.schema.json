@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tosh.local/schemas/portal_packets.schema.json",
+  "title": "Omniverse Portal Packet Contracts",
+  "$defs": {
+    "BookSeed": {
+      "type": "object",
+      "required": ["source_id", "source_text", "seed_id", "concept_seed", "observer_lens", "epistemic_class"],
+      "properties": {
+        "source_id": {"type": "string"},
+        "source_text": {"type": "string"},
+        "seed_id": {"type": "string"},
+        "concept_seed": {"type": "string"},
+        "observer_lens": {"type": "string"},
+        "epistemic_class": {"enum": ["OBSERVED", "VERIFIED", "INFERRED", "INTERPRETED", "SPECULATIVE", "FICTIONAL"]}
+      }
+    },
+    "UniverseNode": {
+      "type": "object",
+      "required": ["compiler_version", "node_id", "source", "observer_lens", "epistemic_class", "compilation_hash", "authority_transfer", "ancestor_mutation_allowed"],
+      "properties": {
+        "compiler_version": {"type": "string"},
+        "node_id": {"type": "string"},
+        "source": {
+          "type": "object",
+          "required": ["source_id", "source_hash", "seed_id"]
+        },
+        "authority_transfer": {"const": false},
+        "ancestor_mutation_allowed": {"const": false}
+      }
+    },
+    "ReplayReceipt": {
+      "type": "object",
+      "required": ["replay_version", "passed", "checks", "prior_compilation_hash", "replay_compilation_hash"],
+      "properties": {"passed": {"const": true}}
+    },
+    "EpistemicDecision": {
+      "type": "object",
+      "required": ["current_class", "proposed_class", "allowed", "reasons", "evidence", "human_promotion_required"]
+    },
+    "GenealogyGraph": {
+      "type": "object",
+      "required": ["graph_version", "root_source_id", "nodes", "edges", "source_to_descendant_path"]
+    },
+    "SelfExplanation": {
+      "type": "object",
+      "required": ["report_version", "identity", "what_created_me", "what_i_changed", "what_i_influenced", "what_is_known", "what_remains_unknown", "promotion_state", "authority_statement"]
+    }
+  }
+}
