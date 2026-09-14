@@ -38,5 +38,11 @@
     "authority_transfer": false,
     "signature": null,
     "signature_state": "UNSIGNED_HUMAN_PROMOTION_REQUIRED"
+  },
+  "registry_binding": {
+    "contract_id": "BOOKSEED-PORTAL/1.0.0",
+    "tribunal_version": "O19.1",
+    "certificate_version": "O22.1",
+    "human_promotion_required": true
   }
 }
