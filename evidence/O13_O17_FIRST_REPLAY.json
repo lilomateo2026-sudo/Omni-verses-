@@ -1,0 +1,91 @@
+{
+  "epistemic_gate": {
+    "allowed": true,
+    "current_class": "INTERPRETED",
+    "evidence": {
+      "direct_observation": false,
+      "independently_confirmed": false,
+      "reproduced": true,
+      "source_intact": true
+    },
+    "human_promotion_required": true,
+    "proposed_class": "VERIFIED",
+    "reasons": [
+      "transition satisfies declared evidence gate"
+    ]
+  },
+  "genealogy": {
+    "cycles_allowed": false,
+    "edges": [
+      {"from": "BOOK-OMNIVERSE-001", "relation": "extracts", "to": "SEED-TRACEABILITY-001"},
+      {"from": "SEED-TRACEABILITY-001", "relation": "compiles_to", "to": "UNIVERSE-CEA28B4FC753CCE2"},
+      {"from": "UNIVERSE-CEA28B4FC753CCE2", "relation": "replayed_as", "to": "REPLAY-CEA28B4FC753CCE2"},
+      {"from": "REPLAY-CEA28B4FC753CCE2", "relation": "evidence_checked_by", "to": "GATE-E7611DB8821D512E"}
+    ],
+    "graph_version": "O15.1",
+    "root_source_id": "BOOK-OMNIVERSE-001",
+    "source_to_descendant_path": [
+      "BOOK-OMNIVERSE-001",
+      "SEED-TRACEABILITY-001",
+      "UNIVERSE-CEA28B4FC753CCE2",
+      "REPLAY-CEA28B4FC753CCE2",
+      "GATE-E7611DB8821D512E"
+    ]
+  },
+  "locked_order": ["O13", "O14", "O16", "O15", "O17"],
+  "replay": {
+    "checks": {
+      "compilation_hash_matches": true,
+      "epistemic_class_matches": true,
+      "node_id_matches": true,
+      "observer_lens_matches": true,
+      "source_hash_matches_prior": true
+    },
+    "passed": true,
+    "prior_compilation_hash": "cea28b4fc753cce2e7611db8821d512e93e2739f121ea2ab74b752ffeb66d12d",
+    "replay_compilation_hash": "cea28b4fc753cce2e7611db8821d512e93e2739f121ea2ab74b752ffeb66d12d",
+    "replay_version": "O16.1"
+  },
+  "self_explanation": {
+    "authority_statement": "This report explains recorded transformations; it does not grant the model external authority.",
+    "identity": "UNIVERSE-CEA28B4FC753CCE2",
+    "promotion_state": "ELIGIBLE_FOR_HUMAN_REVIEW",
+    "report_version": "O17.1",
+    "what_created_me": {
+      "observer_lens": "architect",
+      "seed_id": "SEED-TRACEABILITY-001",
+      "source_id": "BOOK-OMNIVERSE-001"
+    },
+    "what_i_changed": [
+      "translated prose seed into a declarative isolated Universe Node configuration"
+    ],
+    "what_i_influenced": ["REPLAY-CEA28B4FC753CCE2"],
+    "what_is_known": [
+      "source BOOK-OMNIVERSE-001 is preserved by SHA-256 a617a5b60a748bd43af8d35046b742e73ce8cf996a8dc42a647b99306f749fc5",
+      "seed SEED-TRACEABILITY-001 compiled deterministically to UNIVERSE-CEA28B4FC753CCE2",
+      "replay passed",
+      "epistemic transition gate allowed the proposed transition"
+    ],
+    "what_remains_unknown": [
+      "the concept seed is not established as verified external fact"
+    ]
+  },
+  "test_status": "2 passed",
+  "universe_node": {
+    "ancestor_mutation_allowed": false,
+    "authority_transfer": false,
+    "compilation_hash": "cea28b4fc753cce2e7611db8821d512e93e2739f121ea2ab74b752ffeb66d12d",
+    "compiler_version": "O13.1",
+    "environment": "isolated_design_sandbox",
+    "epistemic_class": "INTERPRETED",
+    "execution_policy": "declarative_only",
+    "node_id": "UNIVERSE-CEA28B4FC753CCE2",
+    "node_type": "software_sandbox",
+    "observer_lens": "architect",
+    "source": {
+      "seed_id": "SEED-TRACEABILITY-001",
+      "source_hash": "a617a5b60a748bd43af8d35046b742e73ce8cf996a8dc42a647b99306f749fc5",
+      "source_id": "BOOK-OMNIVERSE-001"
+    }
+  }
+}
