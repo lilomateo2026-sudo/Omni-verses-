@@ -8,23 +8,11 @@ The core rule is simple:
 
 > Everything the system becomes must remain traceable to what it observed, what it interpreted, what it changed, and why.
 
-The architecture is designed to support both narrative development and executable TOSH/OMNI experiments without silently turning metaphor into fact.
+The architecture supports narrative development and executable TOSH/OMNI experiments without silently turning metaphor into fact.
 
-## 1. The Book That Writes Its Own Story
+## 1. Recursive Book → Engine Loop
 
-The book is treated as a recursive knowledge object rather than an oracle.
-
-A passage may generate:
-
-1. a concept seed,
-2. an observer interpretation,
-3. a contradiction,
-4. a design mutation,
-5. an engine requirement,
-6. a story event,
-7. a new descendant passage.
-
-The descendant must preserve provenance back to the source passage.
+A passage may generate a concept seed, observer interpretation, contradiction, design mutation, engine requirement, story event, and descendant passage. Every descendant preserves provenance back to its source.
 
 ```text
 SOURCE PASSAGE
@@ -45,170 +33,17 @@ EVIDENCE + PROVENANCE
 
 ## 2. True-Knowledge Boundary
 
-Every claim entering the system receives one epistemic class.
+Every claim receives one explicit class: OBSERVED, VERIFIED, INFERRED, INTERPRETED, SPECULATIVE, or FICTIONAL. No downstream engine may silently upgrade a claim to a stronger class.
 
-| Class | Meaning |
-| --- | --- |
-| OBSERVED | Directly recorded source material or measured system state. |
-| VERIFIED | Reproduced or independently confirmed within a declared test. |
-| INFERRED | Derived from observed material but not directly established. |
-| INTERPRETED | Meaning assigned through an observer lens. |
-| SPECULATIVE | Plausible or exploratory model requiring validation. |
-| FICTIONAL | Story-world mechanism intentionally unconstrained by present scientific reality. |
+## 3. Omniverse Lens
 
-No downstream engine may silently upgrade a claim to a stronger class.
+A Universe Node is an explicit isolated state space. It may represent a software sandbox, simulation environment, research hypothesis, narrative timeline, or fictional world. The node type must remain explicit.
 
-## 3. Design Pathology Record
+## 4. OmniTech Portal Contract
 
-Every important engine, rule, portal, mission, or narrative technology receives a lineage record.
+A software portal is a controlled translation bridge between isolated state spaces. It serializes declared data, validates the translation contract, preserves provenance, and never transfers authority by default.
 
-```json
-{
-  "artifact_id": "OMNI-ARTIFACT-0001",
-  "source_seed_ids": [],
-  "source_files": [],
-  "observer_lens": "architect",
-  "epistemic_class": "SPECULATIVE",
-  "contradiction": null,
-  "mutation_reason": "",
-  "influenced_engines": [],
-  "created_engines": [],
-  "verification_state": "UNTESTED"
-}
-```
-
-This record answers:
-
-- What created this idea?
-- What did it influence?
-- Which observer interpreted it?
-- What contradiction caused the next mutation?
-- Is the result engineering, hypothesis, philosophy, or fiction?
-
-## 4. Omniverse Lens
-
-The Omniverse is represented as a graph of isolated universe nodes.
-
-```text
-OMNIVERSE
-├── Universe Node A
-│   ├── Mission
-│   ├── Environment
-│   ├── Rules
-│   ├── Model configuration
-│   └── Evidence ledger
-├── Universe Node B
-└── Universe Node C
-```
-
-A universe node may be a software sandbox, simulation environment, research hypothesis, narrative timeline, or fictional world. The node type must be explicit.
-
-## 5. OmniTech Portal Contract
-
-A portal is not assumed to be a physical wormhole. In the software architecture it is a controlled translation bridge between two isolated state spaces.
-
-```text
-STATE SPACE A
-    ↓ serialize
-PORTAL CONTRACT
-    ↓ validate
-TRANSLATION / MAPPING
-    ↓ provenance check
-STATE SPACE B
-```
-
-Required portal fields:
-
-```json
-{
-  "portal_id": "PORTAL-001",
-  "source_universe": "A",
-  "target_universe": "B",
-  "allowed_payload_types": [],
-  "translation_rule": "",
-  "provenance_required": true,
-  "authority_transfer": false,
-  "reversible": false,
-  "epistemic_class": "SPECULATIVE"
-}
-```
-
-For fiction, the same contract may describe literal space technology, but the implementation namespace must remain separate from validated engineering claims.
-
-## 6. Thought Sequence Mapping Order
-
-Canonical mapping order:
-
-```text
-O1  Capture source
-O2  Extract concept seed
-O3  Assign observer lens
-O4  Classify epistemic state
-O5  Detect contradiction
-O6  Generate candidate interpretations
-O7  Translate interpretation into design requirement
-O8  Spawn isolated descendant
-O9  Execute or simulate
-O10 Compare expected vs observed result
-O11 Grade provenance + evidence
-O12 Promote, revise, quarantine, or preserve as fiction
-```
-
-This order is the first Design Pathology path. Descendant engines may reorder experimental stages only if the new order is recorded and replayable.
-
-## 7. Recursive Question Engine
-
-The central question is not "Is the system conscious?"
-
-The operational question is:
-
-> What did this system observe about its previous state, what alternative did it model, and what traceable rule caused it to choose the next state?
-
-That allows metacognition to be modeled computationally as observation of prior state + explicit alternative generation + evaluation + selection.
-
-## 8. Book ↔ Engine Coupling
-
-The story and software communicate through provenance-addressed design seeds.
-
-```text
-BOOK PASSAGE
-   ↓
-SEED ID
-   ├── STORY DESCENDANT
-   ├── SOFTWARE REQUIREMENT
-   ├── EXPERIMENT
-   └── PHILOSOPHICAL INTERPRETATION
-```
-
-A software result may influence later story design, but the ledger must mark whether the result is measured, inferred, or fictionalized.
-
-## 9. Initial OmniTech Mission
-
-**Mission:** Build the first provenance-preserving portal between a Book Seed and an executable Universe Node.
-
-Input:
-- one source passage,
-- one concept seed,
-- one observer lens.
-
-Output:
-- one Universe Node configuration,
-- one explicit epistemic classification,
-- one simulation result,
-- one contradiction record,
-- one descendant design seed.
-
-Promotion gate:
-- source provenance intact,
-- no silent claim-class escalation,
-- descendant reproducible from the recorded inputs,
-- original source unchanged.
-
-## 10. Foundation Principle
-
-The Omniverse does not operate on certainty by declaration.
-
-It operates on **true knowledge boundaries**:
+## 5. Foundation Pipeline
 
 ```text
 OBSERVE
@@ -221,4 +56,56 @@ OBSERVE
 → PRESERVE LINEAGE
 ```
 
-That is the first compact lens through which the book can explain the system, the system can explain its descendants, and every descendant can point back to the source that made it possible.
+## 6. Implemented Execution Order 2
+
+```text
+O13 Book Seed Compiler
+→ O14 Epistemic Transition Gate
+→ O16 Portal Replay Harness
+→ O15 Influence Genealogy Graph
+→ O17 Self-Explanation Report
+```
+
+This layer proves deterministic Book Seed → Universe Node translation, blocks unsupported epistemic escalation, preserves replay evidence, records influence lineage, and explains recorded transformations without granting external authority.
+
+## 7. Implemented Execution Order 3
+
+```text
+🔐 O18 Typed Portal Packets
+→ O19 Reproducibility Tribunal CI
+→ O21 Portal Contract Registry
+→ O20 Multi-Seed Descendant Tournament
+→ O22 Constitutional Certificate
+```
+
+### O18 — Typed Portal Packets
+
+The system now exposes explicit contracts for BookSeed, UniverseNode, ReplayReceipt, EpistemicDecision, GenealogyGraph, and SelfExplanation packets. Runtime validators and JSON Schema definitions detect missing structural fields and constitutional violations such as authority transfer or ancestor mutation.
+
+### O19 — Reproducibility Tribunal
+
+A candidate fails qualification if any constitutional invariant fails: packet validity, deterministic replay, source-hash stability, no authority transfer, no ancestor mutation, or valid portal-contract binding. The same chain is wired into GitHub Actions CI.
+
+### O21 — Portal Contract Registry
+
+`BOOKSEED-PORTAL/1.0.0` is bound to compiler `O13.1`. Historical descendants can therefore identify the exact translation contract used to create them instead of assuming the newest compiler semantics.
+
+### O20 — Multi-Seed Descendant Tournament
+
+Candidates compete on mechanical qualification invariants only. An epistemic class, philosophy, interpretation, or fictional worldview is not considered intrinsically superior. A candidate that attempts unsupported FICTIONAL → VERIFIED escalation is disqualified by O14.
+
+### O22 — Constitutional Certificate
+
+The certificate binds hashes for source, compilation, replay evidence, epistemic decision, genealogy, tribunal, tournament, and portal contract. It is content-addressed and signature-ready.
+
+The system does not fabricate a cryptographic signature. Until a real external signature and explicit human promotion are supplied, the certificate remains:
+
+```text
+signature_state = UNSIGNED_HUMAN_PROMOTION_REQUIRED
+human_promoted = false
+authority_transfer = false
+```
+
+## 8. Constitutional Principle
+
+Self-description is evidence about recorded software transformations, not evidence that a model possesses consciousness, authority, or metaphysical truth. Human choice remains the final promotion gate outside the declared sandbox.
