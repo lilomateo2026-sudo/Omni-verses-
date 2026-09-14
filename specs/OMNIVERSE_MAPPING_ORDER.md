@@ -1,8 +1,8 @@
 # Omniverse Mapping Order
 
-This is the first compiler-facing mapping specification for the Design Pathology branch.
+This is the compiler-facing mapping specification for the Design Pathology branch.
 
-## Canonical order
+## Canonical foundation order
 
 1. Capture source.
 2. Extract concept seed.
@@ -65,3 +65,25 @@ A candidate can advance only when:
 - the original source remains unchanged.
 
 Human choice remains the final authority for promotion outside the sandbox.
+
+## Locked Execution Order 2
+
+O13 → O14 → O16 → O15 → O17
+
+- O13 deterministic Book Seed compiler
+- O14 epistemic transition gate
+- O16 deterministic replay harness
+- O15 influence genealogy graph
+- O17 self-explanation report
+
+## Locked Execution Order 3
+
+🔐 O18 → O19 → O21 → O20 → O22
+
+- O18 Typed Portal Packet Schemas: BookSeed, UniverseNode, ReplayReceipt, EpistemicDecision, GenealogyGraph, and SelfExplanation contracts.
+- O19 Reproducibility Tribunal CI: reject packet drift, replay failure, source-hash drift, authority transfer, ancestor mutation, or invalid portal contracts.
+- O21 Portal Contract Registry: version BookSeed → UniverseNode translation contracts and bind them to compiler versions.
+- O20 Multi-Seed Descendant Tournament: compare candidate descendants by constitutional qualification invariants without treating an epistemic class or worldview as intrinsically superior.
+- O22 Design Pathology Constitutional Certificate: bind source, compilation, replay, gate, genealogy, tribunal, tournament, and portal-contract hashes into a content-addressed promotion manifest.
+
+O22 does not fabricate a cryptographic signature. Until an external signing authority supplies a verifiable signature and a human promotion decision, the certificate remains `UNSIGNED_HUMAN_PROMOTION_REQUIRED` and `human_promoted=false`.
