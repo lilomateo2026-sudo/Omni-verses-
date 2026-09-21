@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tosh.local/schemas/github_app_integration_evidence.schema.json",
+  "title": "TOSH/OMNI GitHub App Integration Evidence",
+  "type": "object",
+  "required": ["evidence_version", "status", "repository", "authorization", "probe", "invariants", "next_stage"],
+  "properties": {
+    "evidence_version": {"type": "string"},
+    "status": {"const": "PASS"},
+    "repository": {"type": "string", "minLength": 3},
+    "authorization": {
+      "type": "object",
+      "required": ["installed_repository_visible", "visibility", "permissions"],
+      "properties": {
+        "installed_repository_visible": {"const": true},
+        "visibility": {"type": "string"},
+        "permissions": {
+          "type": "object",
+          "required": ["pull", "push"],
+          "properties": {
+            "pull": {"const": true},
+            "push": {"const": true},
+            "triage": {"type": "boolean"},
+            "maintain": {"type": "boolean"},
+            "admin": {"type": "boolean"}
+          }
+        }
+      }
+    },
+    "probe": {
+      "type": "object",
+      "required": [
+        "branch",
+        "base_commit_sha",
+        "base_tree_sha",
+        "path",
+        "write_commit_sha",
+        "blob_sha",
+        "readback_exact_match",
+        "cleanup_commit_sha",
+        "cleanup_tree_sha",
+        "net_tree_change_after_cleanup",
+        "main_modified_by_probe"
+      ],
+      "properties": {
+        "branch": {"type": "string"},
+        "base_commit_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "base_tree_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "path": {"type": "string"},
+        "write_commit_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "write_timestamp_utc": {"type": "string"},
+        "blob_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "readback_exact_match": {"const": true},
+        "cleanup_commit_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "cleanup_timestamp_utc": {"type": "string"},
+        "cleanup_tree_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "net_tree_change_after_cleanup": {"const": false},
+        "main_modified_by_probe": {"const": false}
+      }
+    },
+    "invariants": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"}
+    },
+    "next_stage": {"const": "O21.3_REPO_READY_INTEGRATION_PATCH"}
+  }
+}
