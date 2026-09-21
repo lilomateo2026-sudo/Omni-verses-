@@ -1,6 +1,0 @@
-TOSH/OMNI GitHub App non-destructive write probe
-repo=lilomateo2026-sudo/Omni-verses-
-base=b79c6c8fc2f7f9572e5f46dc1844f350c680922b
-branch=integration/github-o21-verification
-purpose=verify create/read/delete capability without modifying main
-expected_cleanup=delete probe file after verified read-back
