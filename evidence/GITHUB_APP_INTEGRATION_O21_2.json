@@ -1,0 +1,41 @@
+{
+  "evidence_version": "O21.2.1",
+  "status": "PASS",
+  "repository": "lilomateo2026-sudo/Omni-verses-",
+  "authorization": {
+    "installed_repository_visible": true,
+    "visibility": "public",
+    "permissions": {
+      "pull": true,
+      "push": true,
+      "triage": true,
+      "maintain": true,
+      "admin": true
+    }
+  },
+  "probe": {
+    "branch": "integration/github-o21-verification",
+    "base_commit_sha": "b79c6c8fc2f7f9572e5f46dc1844f350c680922b",
+    "base_tree_sha": "d6188708618091b8b785ab9e931f8ec5574278fd",
+    "path": "evidence/.github_app_write_probe.txt",
+    "write_commit_sha": "07206bc73f5df7a1900643c6e3f5f8e5429cb58f",
+    "write_timestamp_utc": "2026-09-21T03:07:59Z",
+    "blob_sha": "5a91ca6f336159fe1e04fa4a239cca2c2210714b",
+    "readback_exact_match": true,
+    "cleanup_commit_sha": "7c8c71f6d78baefe96db451fd2a7ef08b6b1912e",
+    "cleanup_timestamp_utc": "2026-09-21T03:08:07Z",
+    "cleanup_tree_sha": "d6188708618091b8b785ab9e931f8ec5574278fd",
+    "net_tree_change_after_cleanup": false,
+    "main_modified_by_probe": false
+  },
+  "invariants": {
+    "isolated_branch_only": true,
+    "write_succeeded": true,
+    "readback_succeeded": true,
+    "blob_identity_observed": true,
+    "cleanup_succeeded": true,
+    "tree_restored_to_base": true,
+    "no_main_commit_created": true
+  },
+  "next_stage": "O21.3_REPO_READY_INTEGRATION_PATCH"
+}
