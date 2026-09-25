@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tosh.local/schemas/design_pathology.schema.json",
+  "title": "Omniverse Design Pathology Record",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "epistemic_class",
+    "observer_lens",
+    "verification_state",
+    "source_seed_ids",
+    "influenced_engines",
+    "created_engines"
+  ],
+  "properties": {
+    "artifact_id": {"type": "string", "minLength": 1},
+    "source_seed_ids": {"type": "array", "items": {"type": "string"}},
+    "source_files": {"type": "array", "items": {"type": "string"}},
+    "observer_lens": {"type": "string", "minLength": 1},
+    "epistemic_class": {
+      "type": "string",
+      "enum": ["OBSERVED", "VERIFIED", "INFERRED", "INTERPRETED", "SPECULATIVE", "FICTIONAL"]
+    },
+    "contradiction": {"type": ["string", "null"]},
+    "mutation_reason": {"type": "string"},
+    "influenced_engines": {"type": "array", "items": {"type": "string"}},
+    "created_engines": {"type": "array", "items": {"type": "string"}},
+    "verification_state": {
+      "type": "string",
+      "enum": ["UNTESTED", "SIMULATED", "REPRODUCED", "CONTRADICTED", "QUARANTINED", "PROMOTED"]
+    },
+    "parent_artifact_id": {"type": ["string", "null"]},
+    "source_hashes": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,20 @@
+{
+  "registry_version": "O21.1",
+  "contracts": [
+    {
+      "contract_id": "BOOKSEED-PORTAL/1.0.0",
+      "compiler_version": "O13.1",
+      "source_packet": "BookSeed",
+      "target_packet": "UniverseNode",
+      "translation": "deterministic_book_seed_compilation",
+      "authority_transfer": false,
+      "ancestor_mutation_allowed": false,
+      "status": "ACTIVE",
+      "qualification": {
+        "tribunal_version": "O19.1",
+        "constitutional_certificate_version": "O22.1",
+        "human_promotion_required": true
+      }
+    }
+  ]
+}

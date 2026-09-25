@@ -1,0 +1,48 @@
+{
+  "execution_order": ["O18", "O19", "O21", "O20", "O22"],
+  "winner": "interpretation",
+  "winner_node_id": "UNIVERSE-9456C789A66B4CF7",
+  "fiction_candidate_qualified": false,
+  "tribunal": {
+    "tribunal_version": "O19.1",
+    "passed": true,
+    "invariants": {
+      "packets_valid": true,
+      "replay_passed": true,
+      "source_hash_stable": true,
+      "no_authority_transfer": true,
+      "no_ancestor_mutation": true,
+      "portal_contract_valid": true
+    },
+    "portal_contract": {
+      "passed": true,
+      "contract_id": "BOOKSEED-PORTAL/1.0.0",
+      "contract_hash": "9fc2148d877c09e7ff2f99ffd48c360ba594598859785342c7d7f21b690a7301"
+    }
+  },
+  "certificate": {
+    "certificate_version": "O22.1",
+    "subject_node_id": "UNIVERSE-9456C789A66B4CF7",
+    "source_hash": "12aeb58bd55d3efa63dd9a23fae752ee51d4d1660d2e6783a40847815d164e65",
+    "compilation_hash": "9456c789a66b4cf782ce676e339b1b1d8330a26337778f6160b6099b55166852",
+    "compiler_version": "O13.1",
+    "portal_contract_hash": "9fc2148d877c09e7ff2f99ffd48c360ba594598859785342c7d7f21b690a7301",
+    "replay_hash": "94c685f90e9e9db024b93dd95375d91d981f0374268a254d02d173fc12d4fc53",
+    "epistemic_decision_hash": "b9d8405be3ee5162661604ea13049010a02c70f8e78c285422028b902b5de2c4",
+    "genealogy_root_hash": "f76016da073248eb37be03ae6151fcb75ad76a58ebd6cab452698ef1f60bd9b4",
+    "tribunal_hash": "ce271fecb62fc4d9898b26c7782c40fe98bf0a2023abc2b014ec526b88eb0cdf",
+    "tournament_hash": "c85a2ce188f779b146112ce552dff42d10ef751cf01d2b9c8400d4d3e157d439",
+    "certificate_hash": "a4d092d11d976d63b1f72a070f1d6fc0576b8e7efc80e8207f7ebd919ddceea8",
+    "eligible_for_human_promotion": true,
+    "human_promoted": false,
+    "authority_transfer": false,
+    "signature": null,
+    "signature_state": "UNSIGNED_HUMAN_PROMOTION_REQUIRED"
+  },
+  "registry_binding": {
+    "contract_id": "BOOKSEED-PORTAL/1.0.0",
+    "tribunal_version": "O19.1",
+    "certificate_version": "O22.1",
+    "human_promotion_required": true
+  }
+}
