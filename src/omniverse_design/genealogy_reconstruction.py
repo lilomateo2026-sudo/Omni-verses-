@@ -1,0 +1,4 @@
+"""O30 — reconstruct constitutional genealogy from a certificate hash."""
+def reconstruct(certificate_hash, *, certificate, attestation, replay, ledger, seal):
+ checks={"certificate":certificate.get("certificate_hash")==certificate_hash,"attestation":attestation.get("certificate_hash")==certificate_hash,"replay_node":replay.get("replay_output",{}).get("node_id")==certificate.get("subject_node_id"),"ledger":any(e.get("payload",{}).get("certificate_hash")==certificate_hash for e in ledger.get("entries",[])),"seal":seal.get("certificate_hash")==certificate_hash}
+ return {"reconstruction_version":"O30.1","certificate_hash":certificate_hash,"passed":all(checks.values()),"checks":checks,"path":[certificate.get("source_hash"),certificate.get("subject_node_id"),certificate_hash,attestation.get("attestation_hash"),ledger.get("root_hash"),seal.get("seal_hash")],"authority_transfer":False}
