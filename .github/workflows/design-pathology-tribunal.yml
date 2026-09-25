@@ -29,4 +29,4 @@ jobs:
       - name: Run Design Pathology constitutional tests
         env:
           PYTHONPATH: src
-        run: python -m pytest -q tests/test_design_pathology_pipeline.py tests/test_o18_o22_constitutional_chain.py tests/test_o23_o27_release_chain.py
+        run: python -m pytest -q tests/test_design_pathology_pipeline.py tests/test_o18_o22_constitutional_chain.py tests/test_o23_o27_release_chain.py tests/test_o28_o31_release_candidate.py
