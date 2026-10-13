@@ -1,0 +1,52 @@
+{
+  "execution_order": [
+    "O28",
+    "O30",
+    "O29",
+    "O31",
+    "O32"
+  ],
+  "source_release_seal": "ffc04ac39014aed92a3a59250c7bacdda69f361b5c541798f017cd5ecbc59140",
+  "certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd",
+  "constitutional_root": "7125447f5fb1db9bf3c12157087cb11643f4f6252c70947ffc925f5b21249bf6",
+  "o28": {
+    "state": "MEASURED_BASELINE",
+    "distinct_environment_fingerprints": 1,
+    "matrix_hash": "8428abf691eb5969bcd8351b69042aafd1141ea435a040c338e7aa5f7e68f11d",
+    "ci_matrix": [
+      "Python 3.10",
+      "Python 3.11"
+    ],
+    "claim_scope": "Only completed measured environments count."
+  },
+  "o30": {
+    "state": "RECONSTRUCTABLE",
+    "path": [
+      "source_hash",
+      "UNIVERSE-A163ABE32021ED49",
+      "certificate",
+      "attestation",
+      "ledger",
+      "release_seal"
+    ],
+    "authority_transfer": false
+  },
+  "o29": {
+    "state": "AWAITING_AUTHORIZED_HUMAN_SIGNATURE",
+    "promoted": false,
+    "required_signer_scope": "AUTHORIZED_HUMAN_PROMOTION",
+    "authority_transfer": false
+  },
+  "o31": {
+    "state": "RELEASE_CANDIDATE_NOT_PROMOTED",
+    "commit_sha": "127c20c828d4685c90eb0c85bcc4a839fbf9d8b4",
+    "tag_name": "omniverse-design-pathology-o31-rc1",
+    "tag_state": "DECLARED_NOT_CREATED_BY_MODULE"
+  },
+  "o32": {
+    "state": "BRIDGE_REFERENCE_READY",
+    "target_repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+    "evidence_copy_policy": "REFERENCE_ONLY_NO_DUPLICATION"
+  },
+  "scope": "Software evidence only; no external physical, metaphysical, consciousness, or fictional-world claim is established."
+}
