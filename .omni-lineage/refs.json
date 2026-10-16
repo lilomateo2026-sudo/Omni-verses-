@@ -1,0 +1,26 @@
+[
+  {
+    "ref": "refs/heads/design-pathology/omniverse-book-portal-seed",
+    "kind": "BRANCH",
+    "target_oid": "9ef1f2645aa18af412a7a5290a939eaac5109c27",
+    "ref_id": "REF-1f896b3bb9bcab06e59f"
+  },
+  {
+    "ref": "refs/heads/integration/github-o21-verification",
+    "kind": "BRANCH",
+    "target_oid": "0d0f9920eb91c75e44d8556e27f79029bc7f225b",
+    "ref_id": "REF-a1e1841bd5b4bcbce451"
+  },
+  {
+    "ref": "refs/heads/main",
+    "kind": "BRANCH",
+    "target_oid": "82479057c38139a19cb963a3715ac3dd4ea55f3b",
+    "ref_id": "REF-b5af9d5a78aaf0c9dbaa"
+  },
+  {
+    "ref": "refs/heads/o32-cross-repo-evidence-qualification",
+    "kind": "BRANCH",
+    "target_oid": "19421cbebfd5a83207b57693bb557afe4a4f7631",
+    "ref_id": "REF-fd893cd78b11422501c7"
+  }
+]

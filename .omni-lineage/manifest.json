@@ -1,0 +1,33 @@
+{
+  "schema": "omni-git-lineage/v2",
+  "repo": "lilomateo2026-sudo/Omni-verses-",
+  "repo_id": "REPO-d6d4de01a7ae4d707abb",
+  "default_branch": "main",
+  "private": false,
+  "run_id": "BATCH-10-20261016T072406Z",
+  "history_rewritten": false,
+  "metadata_branch": "omni-lineage/index-v1",
+  "metadata_push_status": "LOCAL_INDEX_ONLY",
+  "counts": {
+    "refs": 4,
+    "branches": 4,
+    "git_objects": 241,
+    "branch_paths": 66,
+    "pathology_events": 0
+  },
+  "roots": {
+    "content_root_sha256": "bf8303040c6e4a9d429d0e7c6a2ba6b032b1afb2a8bc4adf29ebd2590c62c70b",
+    "branch_root_sha256": "85c56771a8db4badc9fae371c9949725d9bcaf27c06398bd6fd44990b6f3c8eb",
+    "lineage_root_sha256": "297704b03b34b6fde4fc1c1027622059daaecca83f9113930b03affaee9fb86e"
+  },
+  "id_contract": {
+    "repo": "REPO-*",
+    "ref": "REF-*",
+    "lineage": "LIN-*",
+    "dna": "DNA-*",
+    "gene": "GENE-*",
+    "pathology": "PATH-* only on detector evidence"
+  },
+  "coverage": "all objects reachable from all non-generated branch/tag refs; every branch-head blob path separately mapped",
+  "manifest_sha256": "b9fd4a5f0785080f700ff5846f963c88cd7542bd4eeb38c3353df920a783d3bc"
+}
